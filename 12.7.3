@@ -1,0 +1,10 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+money = float(input('Введите сумму вклада: '))
+print('money =', money)
+tkb = float(money * per_cent['ТКБ'] / 100)
+skb = float(money * per_cent['СКБ'] / 100)
+vtb = float(money * per_cent['ВТБ'] / 100)
+sber = float(money * per_cent['СБЕР'] / 100)
+deposit = [tkb, skb, vtb, sber]
+print('Отчисления за год в каждом банке', deposit)
+print('Максимальная сумма, которую вы можете заработать —', max(deposit))
